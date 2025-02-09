@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centering the card */
+body {
+  width: 100%;
+  background-color: #d8e6f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+/* Card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 320px; /* Fixed width */
+  height: auto; /* Adjusts height based on content */
+  margin: auto; /* Centers the card */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+}
+
+/* QR Code image */
+.qr-image {
+  width: 100%; /* Ensures it takes full width of its container */
+  max-width: 280px; /* Prevents it from getting too large */
+  border-radius: 10px;
+}
+.qr-content {
+  padding: 10px 20px 10px 20px;
+}
+
+.outfit {
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Heading and text */
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333;
+}
+
+p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  background: rgba(255, 255, 255, 0.8); /* Optional background */
+  padding: 5px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Design */
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 80px;
+  }
+
+  .card {
+    width: 350px;
+  }
+}
